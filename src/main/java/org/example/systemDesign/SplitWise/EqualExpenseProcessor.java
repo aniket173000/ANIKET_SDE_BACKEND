@@ -12,7 +12,6 @@ public class EqualExpenseProcessor implements Expense{
         setPayerUserExpenses(expenseDto, totalAmount, totalUsers, amountPerUser);
         List<User> allUsers = expenseDto.getAllUsers();
         setOtherUsersExpenses(allUsers, amountPerUser, expenseDto.getPayerUser());
-
     }
 
     private void setOtherUsersExpenses(List<User> allUsers, double amountPerUser, User payerUser) {

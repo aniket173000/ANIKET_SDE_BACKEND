@@ -5,7 +5,7 @@ public class PaymentMain {
         System.out.println("Hey we are testing payment service");
         PaymentStrategy paymentStrategy = new PaymentStrategy();
         PaymentDto paymentDto = new PaymentDto("aniket", "mohit", 100.00);
-        PaymentServiceProvider paymentServiceProvider = pa
+        PaymentServiceProvider paymentServiceProvider = paymentStrategy.getServiceProvider();
         paymentStrategy.processStrategy(paymentDto, new SBIServiceProvider());
     }
 
