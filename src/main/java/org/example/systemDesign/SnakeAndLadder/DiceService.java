@@ -1,4 +1,4 @@
-package org.example.SnakeAndLadder;
+package org.example.systemDesign.SnakeAndLadder;
 
 import java.util.Random;
 
