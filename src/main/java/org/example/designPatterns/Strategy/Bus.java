@@ -1,8 +1,8 @@
 package org.example.designPatterns.Strategy;
 
 public class Bus extends Vehicle {
-    public Bus(VehicleStrategy vehicleStrategy) {
-        super(vehicleStrategy);
+    public Bus() {
+        super(new BusStrategy());
     }
 
     public void drive() {
